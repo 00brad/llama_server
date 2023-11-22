@@ -45,6 +45,11 @@ completion = client.chat.completions.create(
 print(completion)
 ```
 
+## Stop Server
+```bash
+docker stop $(docker ps -q --filter ancestor=llama-server)
+```
+
 ### Limitations
 - Sorry no function calls yet
 
